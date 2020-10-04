@@ -1,0 +1,68 @@
+
+@-webkit-keyframes heightsize {
+    0% { 
+        height: 10px; 
+    }
+
+    50% { 
+        height: 100%; 
+    }
+
+    100% {
+        height: 10px;
+      }
+    }
+
+
+@-webkit-keyframes opacitys {
+    0% { 
+        opacity: 1; 
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+         opacity: 0;
+      }
+    }
+
+
+
+
+.grid{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.box{
+    width: 50px;
+    height: 100px;
+    
+    background-color:red;
+
+    transition-property: background-color, transform;
+    transition-duration: 2s,2s;
+
+    animation: heightsize, opacitys;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.box:hover{
+     background-color: blue;
+     transform: scale(0,0);
+ 
+ 
+    
+}
